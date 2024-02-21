@@ -11,14 +11,17 @@ body {
 
 .container {
     display: grid;
+    align-items: center;
     border: 1px solid #000;
     padding: 10px;
+    height: 100vh;
 }
 
 h1 {
     font-family: "Anonymous Pro", monospace;
     font-weight: 700;
     font-style: normal;
+    margin: 0;
 }
 
 .photo-container img {
