@@ -75,6 +75,12 @@ label {
     text-transform: uppercase;
 }
 
+.password-desc {
+    font-size: .75rem;
+    color: var(--accent-color);
+    margin: 0;
+}
+
 input {
     width: 100%;
     border: none;
