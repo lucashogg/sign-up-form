@@ -3,6 +3,7 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* General Styles */
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -11,19 +12,69 @@ body {
 
 .container {
     display: grid;
+    grid-template-areas:
+        "title"
+        "photo"
+        "form";
     align-items: center;
     border: 1px solid #000;
     padding: 10px;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
-h1 {
+.small-txt {
+    font-size: .8rem;
+}
+
+/* Title Styles */
+.title {
+    grid-area: title;
+}
+
+.title h1 {
     font-family: "Anonymous Pro", monospace;
     font-weight: 700;
     font-style: normal;
     margin: 0;
 }
 
+/* Photo Container Styles */
+.photo-container {
+    grid-area: photo;
+}
+
 .photo-container img {
     width: 100%;
+}
+
+/* Form Styles */
+.form-container {
+    grid-area: form;
+}
+
+.form-container h2 {
+    margin-bottom: 1rem;
+}
+
+.form-row {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .25rem;
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #bbbbbb;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #000;
+    transition: .25s ease-in;
 }
