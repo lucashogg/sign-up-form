@@ -78,3 +78,8 @@ input:focus {
     border-bottom: 2px solid #000;
     transition: .25s ease-in;
 }
+
+button {
+    width: 100%;
+    padding: 10px;
+}
