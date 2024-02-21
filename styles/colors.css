@@ -1,3 +1,7 @@
 :root {
-    --bg-color: ##E5E3DC;
+    --bg-color: #EEECE8;
+    --main-color: #363537;
+    --accent-color: #ADACAF;
+    --valid-form: #4FB477;
+    --invalid-form: #D64045;
 }
