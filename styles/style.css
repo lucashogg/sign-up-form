@@ -116,11 +116,11 @@ input::placeholder {
 }
 
 input:valid {
-    border-bottom: 2px solid var(--valid-form);
+    box-shadow: 0 2px 0 0 var(--valid-form); 
 }
 
 input:not(:placeholder-shown):not(:focus):invalid {
-    border-bottom: 2px solid var(--invalid-form);
+    box-shadow: 0 2px 0 0 var(--invalid-form);
 }
 
 .password-error {
