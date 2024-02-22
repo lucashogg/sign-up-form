@@ -27,6 +27,10 @@ body {
     /* height: 100vh; */
 }
 
+p {
+    margin: 0;
+}
+
 .small-txt {
     font-size: .8rem;
 }
