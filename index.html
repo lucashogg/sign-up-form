@@ -48,10 +48,13 @@
                         </label>
                         <input type="password" id="password-confirm" name="password-confirm"
                             placeholder="Confirm Password"
-                            pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$" required>
+                            pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required>
                     </div>
                     <div class="form-row">
-                        <button type="submit" disabled>Create Account</button>
+                        <p class="password-error">&nbsp;</p>
+                    </div>
+                    <div class="form-row">
+                        <button type="submit">Create Account</button>
                     </div>
                     <div class="form-row">
                         <p class="small-txt">Already have an account? <a href="">Log in.</a></p>
