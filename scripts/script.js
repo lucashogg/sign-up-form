@@ -1,7 +1,11 @@
 // Get elements
 const submitBtn = document.querySelector('button');
 const form = document.querySelector('form');
-const error = document.querySelector('.password-error');
+const passError = document.querySelector('.password-error');
+const inputs = document.querySelectorAll('input');
+
+// Variables
+const error = 'Passwords do not match';
 
 // Check if passwords match
 submitBtn.addEventListener('click', (e) => {
@@ -10,6 +14,15 @@ submitBtn.addEventListener('click', (e) => {
 
     if (password.value != passwordConfirm.value) {
         e.preventDefault();
-        error.innerText = 'Passwords do not match';
+        passError.innerText = error;
+    }
+})
+
+// Remove password error
+inputs.forEach((input) => {
+    if (input.id === 'password' || input.id === 'password-confirm') {
+        input.addEventListener('change', () => {
+            passError.innerHTML = '&nbsp;';
+        })
     }
 })
