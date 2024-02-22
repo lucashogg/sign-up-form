@@ -39,6 +39,7 @@ p {
 /* Title Styles */
 .title {
     grid-area: title;
+    margin-bottom: 1rem;
 }
 
 .title h1 {
