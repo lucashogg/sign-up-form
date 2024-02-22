@@ -107,6 +107,7 @@ input {
 
 input:focus {
     outline: none;
+    border-bottom: 1px solid transparent;
     box-shadow: 0 2px 0 0 var(--main-color); 
     transition: .25s;
 }
@@ -116,10 +117,12 @@ input::placeholder {
 }
 
 input:valid {
+    border-bottom: 1px solid transparent;
     box-shadow: 0 2px 0 0 var(--valid-form); 
 }
 
 input:not(:placeholder-shown):not(:focus):invalid {
+    border-bottom: 1px solid transparent;
     box-shadow: 0 2px 0 0 var(--invalid-form);
 }
 
