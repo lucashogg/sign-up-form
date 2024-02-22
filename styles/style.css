@@ -22,7 +22,7 @@ body {
     align-items: center;
     border: 1px solid #000;
     padding: 10px;
-    max-width: max(50%, 500px);
+    max-width: max(75%, 500px);
     margin: 0 auto;
     /* height: 100vh; */
 }
@@ -132,4 +132,17 @@ button {
 button:disabled {
     opacity: .25;
     cursor: auto;
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        margin-top: 2rem;
+    }
+    .container {
+        padding: 2rem;
+        column-gap: 2rem;
+        grid-template-areas:
+            "title form"
+            "photo form";
+    }
 }
