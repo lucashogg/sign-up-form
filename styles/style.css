@@ -22,7 +22,7 @@ body {
     align-items: center;
     border: 1px solid var(--accent-color);
     border-radius: 10px;
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, .1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
     padding: 10px;
     max-width: max(1000px, 500px);
     margin: 0 auto;
@@ -46,6 +46,10 @@ p {
     font-weight: 700;
     font-style: normal;
     margin: 0;
+}
+
+.title p {
+    color: var(--secondary-text);
 }
 
 /* Photo Container Styles */
