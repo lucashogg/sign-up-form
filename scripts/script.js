@@ -5,7 +5,7 @@ const passError = document.querySelector('.password-error');
 const inputs = document.querySelectorAll('input');
 
 // Variables
-const error = 'Passwords do not match';
+const error = ' Passwords do not match';
 
 // Check if passwords match
 submitBtn.addEventListener('click', (e) => {
