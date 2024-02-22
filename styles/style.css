@@ -20,11 +20,12 @@ body {
         "photo"
         "form";
     align-items: center;
-    border: 1px solid #000;
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, .1);
     padding: 10px;
-    max-width: max(75%, 500px);
+    max-width: max(1000px, 500px);
     margin: 0 auto;
-    /* height: 100vh; */
 }
 
 p {
@@ -44,7 +45,7 @@ p {
     font-family: "Anonymous Pro", monospace;
     font-weight: 700;
     font-style: normal;
-    margin: 0 0 .5rem 0;
+    margin: 0;
 }
 
 /* Photo Container Styles */
@@ -53,7 +54,7 @@ p {
 }
 
 .photo-container img {
-    width: 100%;
+    border-radius: 8px;
 }
 
 .photo-container p {
@@ -99,8 +100,8 @@ input {
 
 input:focus {
     outline: none;
-    border-bottom: 2px solid var(--main-color);
-    transition: .25s ease-in;
+    box-shadow: 0 2px 0 0 var(--main-color); 
+    transition: .25s;
 }
 
 input::placeholder {
@@ -134,12 +135,13 @@ button:disabled {
     cursor: auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 720px) {
     main {
         margin-top: 2rem;
     }
+
     .container {
-        padding: 2rem;
+        padding: 1rem;
         column-gap: 2rem;
         grid-template-areas:
             "title form"
