@@ -40,7 +40,7 @@ body {
     font-family: "Anonymous Pro", monospace;
     font-weight: 700;
     font-style: normal;
-    margin: 0;
+    margin: 0 0 .5rem 0;
 }
 
 /* Photo Container Styles */
@@ -50,6 +50,10 @@ body {
 
 .photo-container img {
     width: 100%;
+}
+
+.photo-container p {
+    margin-top: .5rem;
 }
 
 /* Form Styles */
