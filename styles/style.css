@@ -73,9 +73,7 @@ p {
 /* Form Styles */
 .form-container {
     grid-area: form;
-    margin: 0 auto;
     width: 100%;
-    max-width: 500px;
 }
 
 .form-container h2 {
@@ -144,7 +142,7 @@ button:disabled {
     cursor: auto;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 1024px) {
     main {
         margin-top: 2rem;
     }
